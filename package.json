@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run",
+    "test": "cypress run --env URL=http://localhost:4000",
+    "test-qa": "cypress run --env URL=http://qa-enviroment.juliodelima.com.br",
+    "test-prod": "cypress run --env URL=http://wwww.juliodelima.com.br",
     "cy:headed": "cypress run --headed",
     "cy:open": "cypress open"
   },
